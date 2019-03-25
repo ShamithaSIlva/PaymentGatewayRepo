@@ -1,0 +1,12 @@
+/**
+ *
+ * @author Juliyanage Silva
+ */
+module paymentgateway
+{
+  interface SecurePaymentProcessor
+  {
+    string processPayment(in string account_number ,in string iban, in string amount);
+    oneway void shutdown();
+    };
+};
